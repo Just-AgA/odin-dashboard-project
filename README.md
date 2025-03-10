@@ -1,0 +1,1 @@
+This is the next project from The Odin Project curriculum,where i have built an admin dashboard
