@@ -67,6 +67,7 @@ button {
     grid-template-columns: 2fr 1.5fr;
     justify-content: space-between;
     gap: 10px;
+    padding-bottom: 10px;
 }
 
 .header-inner-row-1 {
@@ -135,7 +136,7 @@ svg path {
     width: 30px;
 }
 
-#notification path, #turtle path, #header-icon path {
+#notification path, #turtle path, #header-icon path, .star path, .lookup path, .source path {
     fill: black;
 }
 
@@ -201,12 +202,39 @@ svg path {
     background-color: white;
 }
 
+.main-grid div {
+    padding: 30px 25px;
+    border-radius: 10px;
+    border-left: 7px solid rgb(236, 158, 42);
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.star, .lookup, .source {
+    position: absolute;
+    top: 170px;
+}
+
+.source {
+    right: 5px;
+}
+
+.lookup {
+    right: 55px;
+}
+
+.star {
+    right: 105px;
+}
+
 .top-grid {
     grid-column: 1 / -1;
     grid-row: 1;
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: end;
+    margin-bottom: -10px;
+    margin-top: 10px;
 }
 
 .main-side-grid {
